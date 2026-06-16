@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 START\
+\
+Create Database HospitalManagementSystem\
+Select Database\
+\
+// STEP 1: Create Tables\
+Create Departments Table\
+Create Doctors Table\
+Create Patients Table\
+Create Appointments Table\
+Create Treatments Table\
+Create Medications Table\
+Create Insurance Table\
+Create Bills Table\
+\
+// STEP 2: Define Relationships\
+Link Doctors to Departments\
+Link Appointments to Patients and Doctors\
+Link Treatments to Appointments\
+Link Medications to Treatments\
+Link Bills to Patients, Appointments, Insurance\
+\
+// STEP 3: Insert Data\
+Insert sample data into all tables\
+\
+// STEP 4: View Data\
+Display all tables using SELECT queries\
+\
+// STEP 5: Create Views\
+Create PatientHistorySummary view\
+Create MonthlyBillingTrend view\
+\
+// STEP 6: Run Analytical Queries\
+Calculate department-wise treatment and revenue\
+Classify patients based on billing amount\
+Rank doctors by number of appointments\
+\
+// STEP 7: Performance Testing\
+Run slow query (doctor revenue using subquery)\
+\
+\
+// STEP 8: Optimization\
+Create index on doctor_id in Appointments table\
+\
+// STEP 9: Stored Procedure\
+Create procedure GetDoctorRevenuePerformance(doctor_id)\
+    Return total revenue for that doctor\
+\
+Call procedure with doctor_id\
+\
+END}
